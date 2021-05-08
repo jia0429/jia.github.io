@@ -1,0 +1,675 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../image/bg.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 220px;
+}
+
+/*頁首*/
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0;
+  font-family: 'Noto Serif TC',
+    serif;
+}
+
+.title {
+  position: fixed;
+}
+
+.main {
+  position: relative;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  background-color: #dfe7fd;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  font-family: "Marker Felt",
+    fantasy;
+  font-size: 40px;
+  color: #3d5a80;
+  text-align: justify;
+  z-index: 99;
+
+}
+
+li a {
+  display: inline;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #3d5a80;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
+
+/*標題*/
+.main {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 130px;
+}
+
+#m-about {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 10px;
+}
+
+.a-title {
+  font-size: 28px;
+  border: #a8dadc 2px dashed;
+  border-radius: 10px;
+  background-color: #b1e4e4;
+  color: #3d5a80;
+  position: absolute;
+  top: 20px;
+  left: 90px;
+}
+
+
+
+#m-skill {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 800px;
+}
+
+.s-title {
+  font-family: 'Noto Serif TC',
+    serif;
+  font-size: 28px;
+  border: #a8dadc 2px dashed;
+  border-radius: 10px;
+  background-color: #b1e4e4;
+  color: #3d5a80;
+  position: absolute;
+  top: -100px;
+  left: 90px;
+}
+
+#m-experience {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 1300px;
+}
+
+.e-title {
+  font-family: 'Noto Serif TC',
+    serif;
+  font-size: 28px;
+  border: #a8dadc 2px dashed;
+  border-radius: 10px;
+  background-color: #b1e4e4;
+  color: #3d5a80;
+  position: absolute;
+  top: -200px;
+  left: 90px;
+}
+
+#m-life {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 350px;
+}
+
+.l-title {
+  font-family: 'Noto Serif TC',
+    serif;
+  font-size: 28px;
+  border: #a8dadc 2px dashed;
+  border-radius: 10px;
+  background-color: #b1e4e4;
+  color: #3d5a80;
+  position: absolute;
+  top: -200px;
+  left: 90px;
+}
+
+/*內文*/
+.a-text {
+  margin: 0;
+  padding: 30px;
+  position: relative;
+  top: 130px;
+  left: 350px;
+  border: #72cde459 0 solid;
+  border-radius: 30px;
+  background-color: #7ac1f1e3;
+  color: #1a4b57;
+  font-size: 20px;
+  width: 700px;
+  float: right;
+}
+
+.a-img {
+  width: 380px;
+  float: left;
+  clear: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 100px;
+  left: 120px;
+  border-radius: 10%;
+
+}
+
+.a-img:hover {
+  transform: scale(1.1);
+  transform: rotate(10deg);
+  border-radius: 10%;
+}
+
+.a-ig {
+  margin: 0;
+  padding: 0;
+  float: right;
+  clear: none;
+  position: relative;
+  right: 250px;
+  top: 270px;
+}
+
+.a-fb {
+  margin: 0;
+  padding: 0;
+  float: right;
+  clear: none;
+  position: relative;
+  right: 100px;
+  top: 270px;
+}
+
+.a-git {
+  margin: 0;
+  padding: 0;
+  float: right;
+  clear: none;
+  position: relative;
+  right: -50px;
+  top: 270px;
+}
+
+.a-email {
+  margin: 0;
+  padding: 0;
+  float: right;
+  clear: none;
+  position: relative;
+  right: -200px;
+  top: 270px;
+}
+
+.a-ig:hover,
+.a-fb:hover,
+.a-git:hover,
+.a-email:hover {
+  transform: scale(1.1);
+}
+
+/*skill bar*/
+.container-b {
+  width: 1000px;
+  height: 250px;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+@keyframes load {
+  from {
+    width: 0%
+  }
+}
+
+@-webkit-keyframes load {
+  from {
+    width: 0%
+  }
+}
+
+@-moz-keyframes load {
+  from {
+    width: 0%
+  }
+}
+
+
+.bar {
+  background-color: #f2e1fa;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  height: 50px;
+  width: 800px;
+  font-size: 23px;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.bar::before {
+  content: attr(data-skill);
+  background-color: #c2b2e6;
+  color: #3d5a80;
+  display: inline-block;
+  padding: 0;
+  height: 50px;
+  border-radius: inherit;
+  animation: load 2s;
+  -webkit-animation: load 2s;
+  -moz-animation: load 2s;
+  animation-iteration-count: inherit;
+}
+
+.bar.a::before {
+  background-color: #a0d898e8;
+  width: calc(100% - 30%);
+}
+
+.bar.b::before {
+  background-color: #63cde7cc;
+  width: calc(100% - 25%);
+}
+
+.bar.c::before {
+  background-color: #a992d4;
+  width: calc(100% - 12%);
+}
+
+.bar.d::before {
+  background-color: #dfa8d1;
+  width: calc(100% - 25%);
+}
+
+.bar.e::before {
+  background-color: #e7c79c;
+  width: calc(100% - 15%);
+}
+
+.bar.f::before {
+  background-color: #5064d669;
+  width: calc(100%);
+}
+
+.bar.g::before {
+  background-color: #f19494;
+  width: calc(100%);
+}
+
+/*skill bar*/
+
+.e-s {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 140px;
+  top: -100px;
+  left: 150px;
+}
+
+.e-c {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 140px;
+  top: -10px;
+  left: 150px;
+}
+
+.e-p {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 140px;
+  top: 50px;
+  left: 150px;
+}
+
+
+/*timeline*/
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  background-color: #375a81;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  right: -15px;
+  top: 15px;
+  background-color: #4f7191f1;
+  border: 4px solid #7ca1d4bd;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #7a5858;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #5abfeeec;
+  ;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #ad5a5a;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent#5abfeeec;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  width: auto;
+  height: 400px;
+  padding: 10px 30px 10px 30px;
+  background-color: #5abfeeec;
+  position: relative;
+  border-radius: 6px;
+  color: #0b3d75;
+  font-size: 20px;
+}
+
+.content:hover {
+  background-color: #93d1ee;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 50px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/*timeline*/
+/*timeline img*/
+.simg-1 {
+  position: absolute;
+  right: 100px;
+  top: 15px;
+  border-radius: 25px;
+}
+
+.simg-2 {
+  position: absolute;
+  left: 100px;
+  top: 435px;
+  border-radius: 25px;
+}
+
+.simg-3 {
+  position: absolute;
+  right: 100px;
+  top: 855px;
+  border-radius: 25px;
+}
+
+.simg-4 {
+  position: absolute;
+  left: 100px;
+  top: 1285px;
+  border-radius: 25px;
+}
+
+.pimg-1 {
+  position: absolute;
+  right: -50px;
+  top: 65px;
+  border-radius: 25px;
+}
+
+.pimg-2 {
+  position: absolute;
+  left: -50px;
+  top: 500px;
+  border-radius: 25px;
+}
+
+.simg-1:hover,
+.simg-3:hover,
+.pimg-1:hover {
+  box-shadow: #4f73e9cc 10px 10px;
+  transform: rotate(2deg);
+}
+
+.simg-2:hover,
+.simg-4:hover,
+.pimg-2:hover {
+  box-shadow: #4f73e9cc 10px 10px;
+  transform: rotate(-2deg);
+}
+
+a {
+  color: #0b3d75;
+}
+
+/*timeline img*/
+.timeline-1 {
+  position: relative;
+  top: -100px;
+}
+
+.timeline-2 {
+  position: relative;
+  top: -10px;
+}
+
+.timeline-3 {
+  position: relative;
+  top: 50px;
+}
+
+/*life*/
+.l-1 {
+  position: absolute;
+  top: -120px;
+  left: 180px;
+  border-radius: 25px;
+}
+
+.l-2 {
+  position: absolute;
+  top: -120px;
+  left: 730px;
+  border-radius: 25px;
+}
+
+.l-3 {
+  position: absolute;
+  top: -120px;
+  left: 1280px;
+  border-radius: 25px;
+}
+
+.l-4 {
+  position: absolute;
+  top: 420px;
+  left: 180px;
+  border-radius: 25px;
+}
+
+.l-5 {
+  position: absolute;
+  top: 420px;
+  left: 730px;
+  border-radius: 25px;
+}
+
+.l-6 {
+  position: absolute;
+  top: 420px;
+  left: 1280px;
+  border-radius: 25px;
+}
+
+@keyframes zy {
+  10% {
+    transform: rotate(10deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-5deg);
+  }
+
+  50%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.l-1:hover,
+.l-2:hover,
+.l-3:hover,
+.l-4:hover,
+.l-5:hover,
+.l-6:hover {
+  animation: zy 2s  infinite;
+}
+
+/*aside*/
+.m {
+  position: fixed;
+  top: 650px;
+  right: -195px;
+  border-radius: 10px;
+
+}
+
+.m:hover {
+  opacity: 1;
+  position: fixed;
+  top: 650px;
+  right: -3px;
+  border-radius: 10px;
+  transition: 2s;
+}
+
+/*aside*/
+
+/*footer*/
+footer {
+  height: 110px;
+  background-color: #dfe7fd;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2750px;
+  text-align: center;
+  font-size: 25px;
+  font-family: Comic Sans MS;
+  color: #128571;
+}
+
+/*footer*/
