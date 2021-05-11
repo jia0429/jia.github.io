@@ -570,20 +570,12 @@ a {
 }
 
 .panel {
-  padding: 15px 70px;
+  padding: 15px 15px 15px 15px ;
   display: none;
   background-color: #c0faf4;
   border-radius: 20px;
   overflow: hidden;
   font-size: 20px;
-}
-
-.panel-heading .accordion-toggle:before {
-  content: "－";
-}
-
-.panel-heading .accordion-toggle.collapsed:before {
-  content: "＋";
 }
 
 .panelall {
@@ -600,9 +592,15 @@ a {
 .pimg-1,
 .pimg-2 {
   float: left;
-  padding: 15px 150px 15px 15px;
+  padding: 15px 20px 15px 0px;
+  border-radius: 50px;
 }
 
+.pimg-1:hover,
+.pimg-2:hover {
+  transform: scale(1.5);
+  transform: rotate(2deg);
+}
 
 /*life*/
 .l-1 {
