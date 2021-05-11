@@ -40,8 +40,7 @@ ul {
   align-items: center;
   width: 100%;
   height: 120px;
-  font-family: "Marker Felt",
-    fantasy;
+  font-family: Comic Sans MS;
   font-size: 40px;
   color: #3d5a80;
   text-align: justify;
@@ -516,30 +515,14 @@ li a {
   border-radius: 25px;
 }
 
-.pimg-1 {
-  position: absolute;
-  right: -50px;
-  top: 65px;
-  border-radius: 25px;
-}
-
-.pimg-2 {
-  position: absolute;
-  left: -50px;
-  top: 500px;
-  border-radius: 25px;
-}
-
 .simg-1:hover,
-.simg-3:hover,
-.pimg-1:hover {
+.simg-3:hover {
   box-shadow: #4f73e9cc 10px 10px;
   transform: rotate(2deg);
 }
 
 .simg-2:hover,
-.simg-4:hover,
-.pimg-2:hover {
+.simg-4:hover {
   box-shadow: #4f73e9cc 10px 10px;
   transform: rotate(-2deg);
 }
@@ -563,6 +546,63 @@ a {
   position: relative;
   top: 50px;
 }
+
+/*js*/
+.accordion {
+  background-color: #84c7c7;
+  color: #3d5a80;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: 20px;
+  font-size: 27px;
+  font-family: 'Noto Serif TC',
+    serif;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+.active,
+.accordion:hover {
+  background-color: #84c7c7;
+}
+
+.panel {
+  padding: 15px 70px;
+  display: none;
+  background-color: #c0faf4;
+  border-radius: 20px;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.panel-heading .accordion-toggle:before {
+  content: "－";
+}
+
+.panel-heading .accordion-toggle.collapsed:before {
+  content: "＋";
+}
+
+.panelall {
+  position: relative;
+  width: 1300px;
+  top: 80px;
+  left: 320px;
+}
+
+.past {
+  margin-top: 20px;
+}
+
+.pimg-1,
+.pimg-2 {
+  float: left;
+  padding: 15px 150px 15px 15px;
+}
+
 
 /*life*/
 .l-1 {
@@ -636,7 +676,7 @@ a {
 .l-4:hover,
 .l-5:hover,
 .l-6:hover {
-  animation: zy 2s  infinite;
+  animation: zy 2s infinite;
 }
 
 /*aside*/

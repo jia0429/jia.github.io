@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
   <div class="wrapper">
     <header>
       <ul class="title">
@@ -186,39 +187,43 @@
           </div>
         </div>
         <!--timeline-->
-        <img src="image/project.jpg" class="e-p" />
-        <!--timeline-->
-        <div class="timeline-3">
-          <div class="timeline">
+       
+          <img src="image/project.jpg" class="e-p" /> 
+          <div class="panelall">
+          <button class="accordion">南友會網頁-新生懶人包</button>
+          <div class="panel"> 
+            <a href="https://cytn.jimdosite.com" target="_blank">
             <img src="image/p-1.jpg" class="pimg-1">
-            <div class="container left">
-              <div class="content">
-                <a href="https://cytn.jimdosite.com" target="_blank">
-                  <h2>南友會網頁-新生懶人包</h2>
-                </a>
-                <p>
-                  這個南友會的網站是我在準備新生茶會時做的，當時本來想製作新生包，但170幾份印下來真的又貴又不環保，所以我就製作了這個新生懶人包的網頁提供給新生參考使用，雖然當時的我還不會寫網頁，所以我是用製作網頁的模板網站製作的，但當時也美編排版了好久，幫助我自己在未來寫網頁可以有更好的美感，雖然我也不知道我現在的網頁到底是美不美，但真的有幫助到啦！！
-                </p>
+            </a>
+            <p>
+              這個南友會的網站是我在準備新生茶會時做的，當時本來想製作新生包，但170幾份印下來真的又貴又不環保，所以我就製作了這個新生懶人包的網頁提供給新生參考使用，雖然當時的我還不會寫網頁，所以我是用製作網頁的模板網站製作的，但當時也美編排版了好久，幫助我自己在未來寫網頁可以有更好的美感，雖然我也不知道我現在的網頁到底是美不美，但真的有幫助到啦！！
+            </p>
+          </div>
+          <div class="past"></div>
+          <button class="accordion">
+            多媒體期中專案-中原宿舍大全</button>
+          <div class="panel"><a href="https://jia0429.github.io/index.html" target="_blank">
+              <img src="image/p-2.jpg" class="pimg-2"></a>
 
-              </div>
-            </div>
-            <img src="image/p-2.jpg" class="pimg-2">
-            <div class="container right">
-              <div class="content">
-                <a href="https://jia0429.github.io/index.html" target="_blank">
-                  <h2>多媒體期中專案-中原宿舍大全</h2>
-                </a>
-                <p>
-                  期中專案我們選擇開箱學校的所有宿舍，當時完全沒有預想到那五個宿舍的照片這麼難找，所以找照片、去背花了好多時間，每個宿舍又都不一樣大，排位置排了超久，眼睛都排到花掉ʕ •̀ o •́
-                  ʔ，但整題來說真的是有模有樣的感覺餒！我最喜歡的是我們四個組員放在頁尾的可愛小頭像，那時候修老半天才讓他看起來像樣一點，大家快點點標題進去看看我們可愛的網頁吧(๑´ㅂ`๑)
-                </p>
-              </div>
-            </div>
-
-
+            <p>期中專案我們選擇開箱學校的所有宿舍，當時完全沒有預想到那五個宿舍的照片這麼難找，所以找照片、去背花了好多時間，每個宿舍又都不一樣大，排位置排了超久，眼睛都排到花掉ʕ •̀ o •́
+              ʔ，但整題來說真的是有模有樣的感覺餒！我最喜歡的是我們四個組員放在頁尾的可愛小頭像，那時候修老半天才讓他看起來像樣一點，大家快點點照片進去看看我們可愛的網頁吧(๑´ㅂ`๑)</p>
           </div>
         </div>
-        <!--timeline-->
+
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+              this.classList.toggle("active"); var
+                panel = this.nextElementSibling; if (panel.style.display === "block") { panel.style.display = "none"; } else {
+                  panel.style.display = "block";
+                }
+            });
+          }
+        </script>
+
         <div><a name="life" style="position: relative;
              top: 0px;"></a></div>
         <div id="m-life">
@@ -241,6 +246,7 @@
     Happy everyday,yeah ٩(๑❛ᴗ❛๑)۶<br>
     Sherry Tai
   </footer>
+
 </body>
 
 </html>
