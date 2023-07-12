@@ -286,7 +286,7 @@ li a {
 
 .bar.a::before {
   background-color: #a0d898e8;
-  width: calc(100% - 30%);
+  width: calc(100% - 35%);
 }
 
 .bar.b::before {
